@@ -22,7 +22,7 @@ public class OrderService {
         return repository.getById(id);
     }
 
-    public Order create(Order object) {
+    public Order create(@org.jetbrains.annotations.NotNull Order object) {
         if (object.getId() == null) {
             return repository.createOrUpdate(object);
         } else {

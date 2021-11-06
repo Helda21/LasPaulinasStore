@@ -20,7 +20,8 @@ public class Client implements Serializable {
     private String email;
     private String address;
 
-    /*@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST)
+
+/*@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST)
     @JsonIgnoreProperties("client")
     private List<Order> orderList;*/
 }
